@@ -1,0 +1,41 @@
+<?php
+
+global $_MODULE;
+$_MODULE = [];
+
+$_MODULE['<{payplus}prestashop>payplus_7e5d8e7beee56aad7e4f725b91e6c83f'] = 'PayPlus Payment Gateway';
+$_MODULE['<{payplus}prestashop>payplus_b7efce1e1b5b3e1f5c5e5d5c5b5a5959'] = 'Accept payments via PayPlus IPG with HMAC authentication';
+$_MODULE['<{payplus}prestashop>payplus_49f4e601d60573c735dd268af1b67f71'] = 'Are you sure you want to uninstall this module?';
+$_MODULE['<{payplus}prestashop>payplus_0e7f9e5f5e5d5c5b5a59585756555453'] = 'PayPlus Merchant ID is not configured';
+$_MODULE['<{payplus}prestashop>payplus_1e2f3e4d5c6b7a8f9e0d1c2b3a4f5e6d'] = 'You have to enable the cURL extension on your server to use this module';
+$_MODULE['<{payplus}prestashop>payplus_settings_saved'] = 'Settings updated successfully';
+$_MODULE['<{payplus}prestashop>payplus_merchant_id'] = 'Merchant ID';
+$_MODULE['<{payplus}prestashop>payplus_merchant_id_help'] = 'Enter your PayPlus Merchant ID';
+$_MODULE['<{payplus}prestashop>payplus_merchant_secret'] = 'Merchant Secret';
+$_MODULE['<{payplus}prestashop>payplus_merchant_secret_help'] = 'Enter your PayPlus Merchant Secret';
+$_MODULE['<{payplus}prestashop>payplus_application_key'] = 'Application Key';
+$_MODULE['<{payplus}prestashop>payplus_application_key_help'] = 'Enter your PayPlus Application Key';
+$_MODULE['<{payplus}prestashop>payplus_environment'] = 'Environment';
+$_MODULE['<{payplus}prestashop>payplus_environment_sandbox'] = 'Sandbox (Development)';
+$_MODULE['<{payplus}prestashop>payplus_environment_live'] = 'Live (Production)';
+$_MODULE['<{payplus}prestashop>payplus_sandbox_endpoint'] = 'Sandbox API Endpoint';
+$_MODULE['<{payplus}prestashop>payplus_sandbox_endpoint_help'] = 'Sandbox endpoint URL';
+$_MODULE['<{payplus}prestashop>payplus_live_endpoint'] = 'Live API Endpoint';
+$_MODULE['<{payplus}prestashop>payplus_live_endpoint_help'] = 'Live endpoint URL';
+$_MODULE['<{payplus}prestashop>payplus_configuration'] = 'PayPlus Configuration';
+$_MODULE['<{payplus}prestashop>payplus_save'] = 'Save';
+$_MODULE['<{payplus}prestashop>payplus_payment_option'] = 'Pay with PayPlus';
+$_MODULE['<{payplus}prestashop>payplus_payment_info_title'] = 'Secure Payment with PayPlus';
+$_MODULE['<{payplus}prestashop>payplus_payment_info_desc'] = 'You will be redirected to PayPlus payment gateway to complete your payment securely.';
+$_MODULE['<{payplus}prestashop>payplus_payment_info_note'] = 'Your payment information is encrypted and processed securely by PayPlus.';
+$_MODULE['<{payplus}prestashop>payplus_error_payment_session'] = 'Failed to create payment session. Please try again.';
+$_MODULE['<{payplus}prestashop>payplus_error_not_available'] = 'This payment method is not available.';
+$_MODULE['<{payplus}prestashop>payplus_transactions'] = 'PayPlus Transactions';
+$_MODULE['<{payplus}prestashop>payplus_order_reference'] = 'Order Reference';
+$_MODULE['<{payplus}prestashop>payplus_amount'] = 'Amount';
+$_MODULE['<{payplus}prestashop>payplus_currency'] = 'Currency';
+$_MODULE['<{payplus}prestashop>payplus_status'] = 'Status';
+$_MODULE['<{payplus}prestashop>payplus_session_id'] = 'Session ID';
+$_MODULE['<{payplus}prestashop>payplus_created'] = 'Created';
+$_MODULE['<{payplus}prestashop>payplus_updated'] = 'Updated';
+$_MODULE['<{payplus}prestashop>payplus_no_transactions'] = 'No transactions found.';

@@ -96,35 +96,6 @@ PAYPLUS_LIVE_ENDPOINT        // Live API URL
 5. PayPlus sends callback notification to PrestaShop
 6. Order status is automatically updated based on payment result
 
-### Technical Flow
-
-```
-Customer Checkout
-    ↓
-Create Order (Pending)
-    ↓
-Generate Payment Payload
-    ↓
-Encode Payload (Base64)
-    ↓
-Generate HMAC-SHA256 Signature
-    ↓
-Send to PayPlus API
-    ↓
-Receive Payment Link
-    ↓
-Redirect Customer to PayPlus
-    ↓
-Customer Completes Payment
-    ↓
-PayPlus Sends Callback
-    ↓
-Validate Signature
-    ↓
-Update Order Status
-    ↓
-Update Transaction Record
-```
 
 ## Payload Structure
 
@@ -205,59 +176,6 @@ The plugin automatically maps PayPlus payment statuses to PrestaShop order statu
 | CANCELLED | Cancelled | Payment cancelled by customer |
 | EXPIRED | Error | Payment session expired |
 
-## Troubleshooting
-
-### Payment Session Creation Failed
-
-**Issue**: "Failed to create payment session" error
-
-**Solutions**:
-1. Verify merchant credentials are correct
-2. Check if cURL is enabled on your server
-3. Ensure API endpoint is accessible
-4. Check PrestaShop logs for detailed error messages
-
-### Callback Not Received
-
-**Issue**: Order status not updating after payment
-
-**Solutions**:
-1. Verify callback URL is accessible from PayPlus servers
-2. Check firewall/security settings
-3. Ensure HTTPS certificate is valid
-4. Review PrestaShop logs for callback errors
-
-### Signature Validation Failed
-
-**Issue**: Callback validation errors
-
-**Solutions**:
-1. Verify merchant secret is correct
-2. Check if payload encoding is correct
-3. Ensure HMAC algorithm is SHA256
-4. Review PayPlus documentation for signature format
-
-### Module Not Appearing
-
-**Issue**: PayPlus payment option not showing at checkout
-
-**Solutions**:
-1. Verify module is installed and enabled
-2. Check if payment method is active
-3. Ensure currency is supported
-4. Clear PrestaShop cache
-
-## Logging
-
-The plugin logs all important events to PrestaShop's system log:
-
-- Payment session creation
-- API requests and responses
-- Callback receipts
-- Order status updates
-- Errors and exceptions
-
-Access logs in PrestaShop admin: **Advanced Parameters** → **Logs**
 
 ## Support
 
@@ -268,28 +186,6 @@ For technical support or issues:
 3. Contact PayPlus support team
 4. Consult PrestaShop community forums
 
-## File Structure
-
-```
-payplus/
-├── payplus.php                          # Main module file
-├── classes/
-│   └── PayPlusHelper.php               # Helper functions
-├── controllers/
-│   └── front/
-│       ├── payment.php                 # Payment initiation controller
-│       └── validation.php              # Callback handler controller
-├── views/
-│   └── templates/
-│       ├── front/
-│       │   └── payment_info.tpl        # Payment info display
-│       └── admin/
-│           └── transactions.tpl        # Admin transaction list
-├── translations/
-│   └── en.php                          # English translations
-├── index.php                           # Directory protection
-└── README.md                           # This file
-```
 
 ## Version History
 
